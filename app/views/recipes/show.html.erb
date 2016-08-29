@@ -1,0 +1,9 @@
+<h1><%= @recipe.name %> by <%= @recipe.user.name %></h1>
+<p><%= @recipe.description %></p>
+<h3>Ingredients</h3>
+<ol>
+	<% @recipe.ingredients.each do |i| %>
+		<li><%= i.name %></li>
+	<% end %>
+</ol>
+<%= recipe_deletable @recipe %>
