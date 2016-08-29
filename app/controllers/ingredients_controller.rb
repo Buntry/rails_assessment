@@ -1,5 +1,9 @@
 class IngredientsController < ApplicationController
 	def index
-		@ingredients = Ingredient.most_recipes
+		unless params[:recipe_id]
+			@ingredients = Ingredient.most_recipes
+		else
+			@ingredients = Recipe.find(params[:recipe_id]).ingredients
+		end
 	end
 end
