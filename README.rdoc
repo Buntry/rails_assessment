@@ -1,0 +1,3 @@
+== Rails Assessment
+
+For my final rails assessment I built a small recipe manager. It has users, recipes, and ingredients, and satisfies all parts of the rubric.
