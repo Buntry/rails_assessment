@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
     create! do |user|
       user.uid = auth["uid"]
       user.name = auth["info"]["name"]
-			user.password = 'banana'
+			user.password = rand(36**length).to_s(36) #Random String
     end
   end
 end

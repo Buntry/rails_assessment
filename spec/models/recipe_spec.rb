@@ -1,0 +1,2 @@
+describe Recipe do
+end

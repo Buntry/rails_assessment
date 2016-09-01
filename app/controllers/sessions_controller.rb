@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
 	
 	def sign_in_with_omniauth
 		user = User.find_by(uid: auth['uid'])
-		if user && user.authenticate('banana')
+		if user
 			session[:user_id] = user.id
 			redirect_to root_path
 		else
