@@ -1,5 +1,6 @@
 My project was a recipe manager website. Users can create recipes and view the recipes of other users. Below I'll show snippets of my code and how they fulfill the project requirements.
 
+<<<<<<< HEAD
 - Use the Ruby on Rails framework. Check.
 
 - Models must include a `has_many`, a `belongs_to`, and a `has_many :through` relationship. 
@@ -94,3 +95,6 @@ end
   <% end %>
 </div>
 ```
+=======
+Check my blog kerpar.co
+>>>>>>> 2fcaf786b85f29d4ec993111c2f83e0db7bba228
